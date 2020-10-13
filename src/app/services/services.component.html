@@ -1,0 +1,334 @@
+<style>
+ 
+
+</style>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<h1 class="ml-5 mt-3">Handyman Services</h1>
+<hr>
+<div class="row">
+  
+<div *ngFor = "let service of resources">
+  <ng-container *ngIf="service.id<10 || service.id==10">
+  <div class="col-sm ml-5">
+      <div class="card" style="width: 18rem;">
+         <!-- <img src="assets/img/x.png" class="card-img-top" alt="..."> -->
+           <div class="card-body">
+            <h5 class="card-services">{{service.name}}</h5>
+            <p class="card-text">{{service.description}} </p>
+
+            <a href="" class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yardandcomputer/appointment'});return false;">Schedule a Time</a>
+           
+
+            <button type="button" class="btn btn-outline-success mr-2 m-2" placement="top"
+        ngbPopover="${{service.price}}/{{service.type}}" popoverTitle="Price">
+  Price
+</button>
+          </div>
+       </div>
+</div>
+</ng-container>
+</div>
+
+</div>
+<hr>
+<h1 class="ml-5">Computer Repair Services</h1>
+<hr>
+<div class="row">
+  
+<div *ngFor = "let service of resources">
+  <ng-container *ngIf="service.id>10">
+  <div class="col-sm ml-5">
+      <div class="card" style="width: 18rem;">
+         <!-- <img src="assets/img/x.png" class="card-img-top" alt="..."> -->
+           <div class="card-body">
+            <h5 class="card-services">{{service.name}}</h5>
+            <p class="card-text">{{service.description}}</p>
+            <a href="" class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yardandcomputer/appointment'});return false;">Schedule a Time</a>
+           
+
+            <button type="button" class="btn btn-outline-success mr-2 m-2" placement="top"
+        ngbPopover="${{service.price}}/{{service.type}}" popoverTitle="Price">
+  Price
+</button>
+          </div>
+       </div>
+</div>
+</ng-container>
+</div>
+
+</div>
+<div style="height:400px;background:white;"><hr></div>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+              
+
+<!-- <div class="row">
+  <h1>Yard and Handyman Services</h1>
+<div *ngFor = "let service of jsonRequest | async">
+  <div *ngFor = "let names of service">
+
+  <div class="col-xs m-5">
+      <div class="card" style="width: 18rem;">
+         <img src="assets/img/x.png" class="card-img-top" alt="...">
+           <div class="card-body">
+            <h5 class="card-services">{{names}}</h5>
+            <p class="card-text">If you hire my services to fix the problem, the diagnostic is free!</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+       </div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+    <h1>Computer Services</h1>
+  <div *ngFor = "let names of jsonRequest">
+  
+    <div class="col-xs m-5">
+        <div class="card" style="width: 18rem;">
+           <img src="assets/img/x.png" class="card-img-top" alt="...">
+             <div class="card-body">
+              <h5 class="card-services">{{names.name}}</h5>
+              <p class="card-text">If you hire my services to fix the problem, the diagnostic is free!</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+  </div>
+</div>
+</div> --> 
+<!-- 
+<div class="row">
+    <div class="col-xs m-5">
+        
+    </div>
+    <div class="col-xs m-5">
+<div class="card" style="width: 18rem;">
+    <img src="assets/img/x.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-services">System Tune-Up and Optimization</h5>
+      <p class="card-text">Safetly update your computer's software and do a maitencance scan</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+<div class="col-xs m-5">
+    <div class="card" style="width: 18rem;">
+        <img src="assets/img/x.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-services">Virus / Spyware / Adware Protection, Scan and Removal</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-xs m-5">
+        <div class="card" style="width: 18rem;">
+            <img src="assets/img/x.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-services">Data Migration</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+<div class="col-xs m-5">
+    <div class="card" style="width: 18rem;">
+        <img src="assets/img/x.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-services">Operating System Installation</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+<div class="col-xs m-5">
+    <div class="card" style="width: 18rem;">
+        <img src="assets/img/x.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-services">Install / Upgrade Single Software Title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+</div> -->
+<!--
+PC Troubleshooting / Diagnostics	FREE if you hire us
+to fix the problem
+(otherwise $50)	FREE if you hire us
+to fix the problem
+(otherwise $129)
+
+System Tune-Up and Optimization	$48 / hr or
+$7.95 Maintenance Plan	$179
+
+Virus / Spyware / Adware Protection, Scan and Removal	$48 / hr or
+$7.95 Maintenance Plan	$249
+
+Hardware Install / Upgrade / Repair	$48 / hr or
+$7.95 Maintenance Plan	$129
+
+Operating System Installation	$48 / hr or
+$7.95 Maintenance Plan	$199
+
+Operating System Installation with Data Backup	$48 / hr or
+$7.95 Maintenance Plan	$229
+
+Install / Upgrade Single Software Title	$48 / hr or
+$7.95 Maintenance Plan	$79
+
+Secure Data Deletion	$48 / hr or
+$7.95 Maintenance Plan	$129
+
+Data Migration	$48 / hr or
+$7.95 Maintenance Plan	$179
+
+Website Design and Development
+
+Graphic Design and Corporate Identity Services
+
+Contact
+Phone:
+(574) 848-5234
+
+
+Office Hours:
+Monday - Friday:
+10:00 am - 6:00 pm
+
+Location
+Wingenuity, Inc.
+211 E Vistula (SR 120)
+PO Box 102
+Bristol, IN 46507
+
+
+Not located in Michiana? Check out our Outside Michiana page.
+
+Why Call Us?
+We are honest
+
+
+We are dependable
+
+
+Fast turnaround
+
+
+Great rates
+
+
+Top notch service
+
+
+No travel charges
+
+
+Even more reasons...
+
+Proudly Accepted
+Accepted Payment Methods
+Gift Certificates
+Know someone with computer needs?
+
+
+Gift certificates are available in any amount and make great gifts. Order some today!
+
+Articles
+Check out our Computer Articles!
+
+
+As seen in:
+Michiana Family MagazineMichiana Family Magazine
+
+Support
+Remote Computer Support
+In-Shop Repair Prices
+When you bring your computer into our shop for repair, we give you two easy ways to pay.
+
+Hourly Service - We will fix your computer at the low hourly rate of $48/hour.
+
+Computer Service Maintenance Packages - This is the best value for your money! Wingenuity's maintenance packages assure you never have to worry about your computer again! If you're covered under the Maintenance package, simply bring your computer in, no matter what the problem is, and we'll take care of it for you. In addition to the peace-of-mind you'll feel, you also receive priority service over and above our hourly clients. Packages starting out at $7.95. Come in today to find out all the details!
+
+On-Site Service Prices
+To provide you with the best value for your money, we give you three easy and cost-effective ways to utilize our on-site services:
+
+Individual Services - We offer nearly all our Individual Services at fixed rate prices, so you'll never get stuck paying high hourly rates or have to worry about how long it takes to get the job done.
+
+Create Your Own Package - If you need more than one Individual Service, we've made it possible for you to create your own package and save money! Each additional Individual Service (of equal or lesser value) performed during the same service call is half price. For example, if you purchase the Data Migration service for $179, you can add on a One-Time Data Backup for only $74.50 (which is regularly priced at $149). There is no limit to how many half price services you can add on to the same service call. Website/SEO and Hourly Services are not eligible for the half price discount.
+
+Computer Service and Support Plans - We also have Computer Service and Support Plans to meet your needs and budget.
+Prices are for individual computers. Each additional computer serviced during the same service call is half price. Prices are for labor only and do not include parts or software.
+
+Individual Services
+
+Descriptions are located on the Business Services and Residential Services pages.
+
+
+Service	In-Shop Price	On-Site Price
+Business Network Design / Installation	N/A	$199 first two devices,
+$79 each additional
+Home Network Design / Installation	N/A	$179 first two devices,
+$59 each additional
+Wireless Network Security	N/A	$149 first two devices,
+$59 each additional
+Internet Content Filtering	N/A	$349
+Online Child Safety	N/A	$129
+Physical Cleaning	$48 / hr or
+$7.95 Maintenance Plan	$89
+PC Troubleshooting / Diagnostics	FREE if you hire us
+to fix the problem
+(otherwise $50)	FREE if you hire us
+to fix the problem
+(otherwise $129)
+System Tune-Up and Optimization	$48 / hr or
+$7.95 Maintenance Plan	$179
+Virus / Spyware / Adware Protection, Scan and Removal	$48 / hr or
+$7.95 Maintenance Plan	$249
+Hardware Install / Upgrade / Repair	$48 / hr or
+$7.95 Maintenance Plan	$129
+Laptop DC Jack Replacement	$48 / hr or
+$7.95 Maintenance Plan	N/A
+Operating System Installation	$48 / hr or
+$7.95 Maintenance Plan	$199
+Operating System Installation with Data Backup	$48 / hr or
+$7.95 Maintenance Plan	$229
+Install / Upgrade Single Software Title	$48 / hr or
+$7.95 Maintenance Plan	$79
+Install / Upgrade / Repair Software Suite	$48 / hr or
+$7.95 Maintenance Plan	$99
+Business Data Recovery	Contact us for a quote.	Contact us for a quote.
+Home Data Recovery	Contact us for a quote.	Contact us for a quote.
+Secure Data Deletion	$48 / hr or
+$7.95 Maintenance Plan	$129
+Secure Online Data Backup	Click here for pricing.	Click here for pricing.
+One-Time Data Backup	$48 / hr or
+$7.95 Maintenance Plan	$149
+Data Migration	$48 / hr or
+$7.95 Maintenance Plan	$179
+General PC Service	$48 / hr or
+$7.95 Maintenance Plan	$129
+Website Design and Development	Visit Wingenuity Design for more information.	Visit Wingenuity Design for more information.
+Graphic Design and Corporate Identity Services	Visit Wingenuity Design for more information.	Visit Wingenuity Design for more information.
+
+Ready to get started? Contact us today!
+
+
+Website and SEO services are not eligible for the Create Your Own Package half price discount.
+
+
+Hourly Services
+
+Descriptions are located on the Business Services and Residential Services pages.
+
+
+Phone Support	$75 / hr
+Remote Computer Support	$75 / hr
+On-Site Technical Support / Consulting	$95 / hr
+On-Site Network Troubleshooting / Support	$95 / hr
+Custom Software Development	$95 / hr
+Custom Database Programming	$95 / hr */
+-->

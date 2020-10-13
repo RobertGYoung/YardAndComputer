@@ -1,0 +1,126 @@
+{
+    "services": [
+
+      {
+        "id": 1,
+        "name": "Weeding",
+        "description": "Clearing weeds and unwanted shrubs from gardens and landscape",
+        "price": 30,
+        "type": "hourly"
+        },
+        {
+          "id": 2,
+          "name": "Mulching",
+          "description": "Purchasing and Spreading of Mulch around gardens and landscape",
+          "price": 35,
+          "type": "hourly"
+  
+        },
+        {
+          "id": 3,
+          "name": "Trimming",
+          "description": "Shaping shrubs and cutting down any low hanging branches.",
+          "price": 55,
+          "type": "hourly"
+  
+        },
+        {
+          "id": 4,
+          "name": "Painting",
+          "description": "Avoid the mess on basic painting projects, I keep things tiddy and mess free with proper preparation.",
+          "price": 45,
+          "type": "hourly"
+  
+        },
+        {
+          "id": 5,
+          "name": "Washing and Cleaning",
+          "description": "Whether its windows, cars, kitchens or bathrooms, I'll get it clean like new",
+          "price": 45,
+          "type": "hourly"
+  
+        },
+        {
+          "id": 6,
+          "name": "Airfilter Replacement",
+          "description": "Monthly Service, purchasing and instalation of AC Air Filters to keep the air your breathing fresh as heck",
+          "price": 35,
+          "type": "Monthly"
+  
+        },
+        {
+          "id": 7,
+          "name": "Smoke Detector Replacement",
+          "description": "Monthly Service, purchasing and instalation of Smoke Detectors to ensure you stay and feel safe from hazards",
+          "price": 35,
+          "type": "Monthly"
+        },
+        {
+          "id": 8,
+          "name": "Gutters",
+          "description": "Gutter Cleaning and Scrubing",
+          "price": 2,
+          "type": "per foot"
+  
+        },
+        {
+          "id": 9,
+          "name": "Small Groceries Orders",
+          "description": "Purchase and Delivery of Small Grocery Orders",
+          "price": 35,
+          "type": "hourly"
+  
+        },
+        {
+          "id": 10,
+          "name": "Lifting, Reaching and Organization Assitance",
+          "description": "Hire me to lift and move furniture, or help in re-organizing your garage ",
+          "price": 35,
+          "type": "hourly"
+  
+        },
+      {
+        "id": 11,
+        "name": "Pc Trouble Shooting and Diagnostic",
+        "description": "Free if hired to fix the problem",
+        "price": 30,
+        "type": "hourly"
+      },
+      {
+        "id": 12,
+        "name": "Virus/Threat removal",
+        "description": "After a diagnostic, removal of threat, or fixing the issue at hand. Free if it takes less than 5 minutes to fix :) ",
+        "price": 35,
+        "type": "hourly"
+      },
+      {
+        "id": 13,
+        "name": "Memory Managment",
+        "description": "Secure Data Transfer or Deletion",
+        "price": 30,
+        "type": "hourly"
+      },
+      {
+        "id": 14,
+        "name": "PC Repair",
+        "description": "Disassembly/instalation of hardware components",
+        "price": 55,
+        "type": "hourly"
+      },
+      {
+        "id": 15,
+        "name": "PC Cleanup and Optimization",
+        "description": "A full clean-up and optimization, cleaning up background clutter that you computer often stocks up on with out your knowledge, and professional optimization software to keep your computer running smoothly as possible",
+        "price": 70,
+        "type": "fixed"
+      },
+      {
+        "id": 16,
+        "name": "Memory Managment",
+        "description": "Secure Data Transfer or Deletion",
+        "price": 55,
+        "type": "fixed"
+
+      }
+    ]
+  }
